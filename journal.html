@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Journal — Your Name</title>
+  <title>Journal: R2R &amp; Warranty — Wayne Fu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,7 +11,7 @@
 <body>
 
   <nav class="nav">
-    <div class="nav-name"><a href="index.html">Your Name</a></div>
+    <div class="nav-name"><a href="index.html">Wayne Fu</a></div>
     <ul class="nav-links">
       <li><a href="index.html">About</a></li>
       <li><a href="research.html">Research</a></li>
@@ -20,8 +20,8 @@
       <li class="nav-dropdown">
         <span class="nav-dropdown-label active">Journal ▾</span>
         <ul class="dropdown-menu">
-          <li><a href="journal.html" class="active">Journal: [Topic 1]</a></li>
-          <li><a href="journal2.html">Journal: [Topic 2]</a></li>
+          <li><a href="journal.html" class="active">Journal: R2R &amp; Warranty</a></li>
+          <li><a href="journal2.html">Journal: Chemical Use</a></li>
         </ul>
       </li>
     </ul>
@@ -31,82 +31,76 @@
   <main class="page-inner">
 
     <div class="page-header">
-      <span class="page-label">Journal</span>
-      <h1>Weekly <em>Notes</em></h1>
-      <p class="page-subtitle">Ongoing notes on [topic] — updated weekly</p>
+      <span class="page-label">Journal I</span>
+      <h1>Right to Repair &amp; <em>Warranty</em></h1>
+      <p class="page-subtitle">Weekly notes on R2R policy, warranty design, and repair market dynamics</p>
     </div>
 
     <section class="journal-intro">
-      <p class="lead">This is a running log of my thinking on [topic]. I write here weekly to track how my understanding evolves, note useful papers or ideas, and think out loud. These are working notes — not polished arguments.</p>
+      <p class="lead">This log tracks developments in the right-to-repair movement and the warranty landscape — two areas directly connected to my research on warranty length, product reliability, and secondary markets. I write here weekly to follow how law, enforcement, and firm strategy are evolving. These are working notes, not polished arguments.</p>
     </section>
 
-    <!-- TAG FILTER -->
     <div class="journal-filters">
       <span class="filter-label">Filter:</span>
-      <button class="tag-btn active" onclick="filterEntries('all')">All</button>
-      <button class="tag-btn" onclick="filterEntries('reading')">Reading</button>
-      <button class="tag-btn" onclick="filterEntries('ideas')">Ideas</button>
-      <button class="tag-btn" onclick="filterEntries('methods')">Methods</button>
-      <button class="tag-btn" onclick="filterEntries('field')">Field Notes</button>
+      <button class="tag-btn active" onclick="filterEntries('all', event)">All</button>
+      <button class="tag-btn" onclick="filterEntries('litigation', event)">Litigation</button>
+      <button class="tag-btn" onclick="filterEntries('policy', event)">Policy</button>
+      <button class="tag-btn" onclick="filterEntries('industry', event)">Industry</button>
+      <button class="tag-btn" onclick="filterEntries('research', event)">Research Links</button>
     </div>
 
-    <!-- JOURNAL ENTRIES — add new ones at the TOP -->
     <section class="journal-entries">
 
-      <!-- ENTRY: Copy this block to add a new weekly entry -->
-      <article class="journal-entry" data-tags="ideas reading">
+      <!-- ENTRY TEMPLATE: copy this block, paste above existing entries, update content -->
+      <article class="journal-entry" data-tags="litigation industry">
         <div class="entry-meta">
           <span class="entry-date">Week of April 14, 2026</span>
-          <div class="entry-tags">
-            <span>Ideas</span>
-            <span>Reading</span>
-          </div>
+          <div class="entry-tags"><span>Litigation</span><span>Industry</span></div>
         </div>
-        <h2 class="entry-title">What I've been thinking about this week</h2>
+        <h2 class="entry-title">John Deere's $99M Settlement — and the FTC Suit That Keeps Going</h2>
         <div class="entry-body">
-          <p>Write freely here. What papers did you read? What ideas emerged? What confused you? What clicked? This is your thinking space — no need to be formal or conclusive.</p>
-          <p>You can include questions you're sitting with: <em>Why does X work this way? What would happen if Y?</em></p>
-          <h3>Papers / Sources</h3>
+          <p>The most consequential R2R business story of recent weeks: John Deere agreed to pay $99 million to settle a 2022 class action lawsuit alleging the company monopolized repair services by withholding diagnostic software from farmers and independent repair shops. Beyond the dollar figure, Deere must also make repair tools available for at least a decade — which may prove more operationally significant than the settlement amount itself.</p>
+
+          <p>The core allegation was that Deere's proprietary <em>Service ADVISOR</em> software — available only to authorized dealers — gave the company a 100% market share over all repairs requiring that tool. This created what the FTC called "unfair steering": farmers were funneled toward Deere's dealer network not by preference but by software-enforced necessity. When equipment stopped working during planting or harvest windows, there was no alternative. U.S. PIRG estimated that repair restrictions across all agricultural manufacturers cost farmers $4.2 billion per year, making the $99M settlement look relatively modest.</p>
+
+          <p>The FTC's separate antitrust lawsuit — filed January 2025 under the Biden administration and joined by Illinois, Minnesota, Michigan, Wisconsin, and Arizona — remains active. The Trump FTC has not dropped it. In mid-2025, a federal judge in Illinois rejected Deere's motion to dismiss, allowing the case to proceed. The discovery phase has since generated an unusual side dispute: Deere obtained court access to confidential competitive data from CNH Industrial, Kubota, and AGCO — companies drawn in as third parties — triggering an interlocutory appeal from AGCO to protect what it called its "crown jewels" of business information. The fight over third-party discovery may itself reshape competitive dynamics in the equipment industry.</p>
+
+          <p>Also worth noting: more than a dozen states introduced agricultural R2R bills in early 2025, following Colorado's 2023 law (the first agricultural R2R law in the U.S., effective January 2024). The legislative momentum is real even as the federal outcome remains uncertain.</p>
+
+          <h3>The Broader R2R Landscape (April 2026)</h3>
           <ul>
-            <li>Author (Year). "Paper Title." <em>Journal</em>. — One sentence on why it matters.</li>
-            <li>Author (Year). "Another Paper." <em>Conference</em>. — What you took from it.</li>
+            <li>R2R legislation has been introduced in all 50 U.S. states. More than a quarter of Americans now live in a state with an enforceable R2R law covering at least some product categories.</li>
+            <li>The REPAIR Act (H.R. 1566) for vehicles and the Fair Repair Act for consumer electronics are both under active Congressional consideration.</li>
+            <li>SEMA uniquely advocates for a right to <em>modify</em>, not just repair — their concern centers on ADAS recalibration after vehicle customization, which OEMs currently control exclusively.</li>
+            <li>The American Farm Bureau's voluntary MOU strategy (covering ~75% of U.S. agricultural machinery) did not prevent the Deere lawsuit, raising the question of when negotiated access agreements are substantively different from no agreement at all.</li>
+            <li>The Repair Association's 2026 model legislation strengthens parts-pairing prohibitions — a central issue for electronics where software locks prevent third-party parts from functioning even when physically compatible.</li>
           </ul>
-          <h3>A thought</h3>
-          <p>One idea worth sitting with longer. Maybe a connection you made, a question you can't shake, or something you want to explore next week.</p>
+
+          <h3>Connection to My Research</h3>
+          <p>The Deere case is directly relevant to my warranty-secondary market work. Traditional models treat warranties as quality signals or insurance mechanisms. But if a manufacturer controls the repair ecosystem through software, the warranty period's strategic scope expands: the firm controls not just the product sale but the entire post-sale service revenue stream. This raises a question worth developing further — is a longer warranty a credible quality signal when the manufacturer is also the monopolist in the repair market, or does it become a lock-in strategy?</p>
+
+          <h3>Sources</h3>
+          <ul>
+            <li>FTC press release, January 15, 2025 — FTC, Illinois &amp; Minnesota v. Deere &amp; Company.</li>
+            <li>Farm Progress, April 2026 — Deere $99M class action settlement announcement.</li>
+            <li>Investigate Midwest, July 2025 — Analysis of Judge Johnson's ruling rejecting Deere's motion to dismiss the FTC case.</li>
+            <li>Right to Repair Summary (compiled April 2026) — Advocacy positions of SEMA, Auto Care Association, MEMA, Repair Association, iFixit, U.S. PIRG, and AFBF.</li>
+          </ul>
         </div>
       </article>
-      <!-- END ENTRY -->
 
-      <article class="journal-entry" data-tags="methods">
+      <article class="journal-entry" data-tags="policy research">
         <div class="entry-meta">
           <span class="entry-date">Week of April 7, 2026</span>
-          <div class="entry-tags">
-            <span>Methods</span>
-          </div>
+          <div class="entry-tags"><span>Policy</span><span>Research Links</span></div>
         </div>
-        <h2 class="entry-title">A methodological puzzle</h2>
+        <h2 class="entry-title">Starting This Log: Why R2R Matters for Operations Research</h2>
         <div class="entry-body">
-          <p>This week I got stuck on a methods question. Describe the puzzle — writing it out often helps clarify it. This is exactly the kind of thing worth logging.</p>
-          <p>I tried [approach A] but ran into [problem]. Then I read [reference] which suggested [alternative]. Still not sure which direction to go.</p>
-          <h3>Resources</h3>
-          <ul>
-            <li>Author (Year). "Relevant Paper." <em>Journal</em>. — Context.</li>
-          </ul>
-        </div>
-      </article>
+          <p>I'm starting this journal to track right-to-repair and warranty developments that connect to my research agenda. My 2022 M&SOM paper with Atasu and Tereyagoglu examined warranty length, product reliability, and secondary markets. The R2R movement is, in many ways, a live policy experiment in what happens when repair market access is actively contested — and the outcomes have direct implications for how we model warranty decisions and aftermarket competition.</p>
 
-      <article class="journal-entry" data-tags="field reading">
-        <div class="entry-meta">
-          <span class="entry-date">Week of March 31, 2026</span>
-          <div class="entry-tags">
-            <span>Field Notes</span>
-            <span>Reading</span>
-          </div>
-        </div>
-        <h2 class="entry-title">First entry — why I'm keeping this log</h2>
-        <div class="entry-body">
-          <p>Explain why you started this journal. What topic are you tracking? What do you hope keeping these notes will do for your thinking over time?</p>
-          <p>Setting the stage for whoever reads this (including future you).</p>
+          <p>The core operations question I keep returning to: when firms control the repair ecosystem — parts, software, diagnostic tools, authorized dealer networks — how does that change the strategic logic of warranty design? Traditional models treat warranty as a quality signal or a form of insurance for buyers. But when the manufacturer is also the monopolist in the repair market, warranty becomes part of a broader aftermarket revenue strategy. The product sale is the entry point; the service monopoly is where profits accumulate.</p>
+
+          <p>The Deere case is the clearest current example, but the same dynamic is visible across sectors: telematics and OBD data access in automotive, parts pairing in consumer electronics, software locks on FDA-cleared medical devices. I'll track developments across all of these, with a focus on what each case tells us about firm strategy and the operational consequences of repair market structure.</p>
         </div>
       </article>
 
@@ -115,22 +109,17 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Your Name · Built with care</p>
+    <p>© 2026 Wayne Fu · University of Michigan-Dearborn · <a href="mailto:waynefu@umich.edu">waynefu@umich.edu</a></p>
   </footer>
 
   <script src="nav.js"></script>
   <script>
-    function filterEntries(tag) {
+    function filterEntries(tag, event) {
       const entries = document.querySelectorAll('.journal-entry');
-      const btns = document.querySelectorAll('.tag-btn');
-      btns.forEach(b => b.classList.remove('active'));
-      event.target.classList.add('active');
-      entries.forEach(entry => {
-        if (tag === 'all' || entry.dataset.tags.includes(tag)) {
-          entry.style.display = 'block';
-        } else {
-          entry.style.display = 'none';
-        }
+      document.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('active'));
+      if (event && event.target) event.target.classList.add('active');
+      entries.forEach(e => {
+        e.style.display = (tag === 'all' || e.dataset.tags.includes(tag)) ? 'block' : 'none';
       });
     }
   </script>

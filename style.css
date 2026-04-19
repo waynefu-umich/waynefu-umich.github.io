@@ -71,7 +71,10 @@ ul { list-style: none; }
   align-items: center;
 }
 
-.nav-links a {
+.nav-links > li { position: relative; }
+
+.nav-links a,
+.nav-dropdown-label {
   font-family: var(--mono);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
@@ -80,12 +83,60 @@ ul { list-style: none; }
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
+  cursor: pointer;
+  user-select: none;
 }
 
 .nav-links a:hover,
-.nav-links a.active {
+.nav-links a.active,
+.nav-dropdown-label.active {
   color: var(--ink);
   border-bottom-color: var(--accent);
+  opacity: 1;
+}
+
+/* Dropdown */
+.nav-dropdown { position: relative; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 18px);
+  right: 0;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  min-width: 200px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  z-index: 200;
+  flex-direction: column;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  border-bottom: 1px solid var(--border);
+  border-bottom-width: 0;
+  transition: background 0.15s;
+}
+
+.dropdown-menu li:not(:last-child) a {
+  border-bottom: 1px solid var(--border);
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a.active {
+  background: var(--paper-warm);
+  color: var(--ink);
   opacity: 1;
 }
 
@@ -541,6 +592,16 @@ main { flex: 1; }
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
+  .dropdown-menu {
+    position: static;
+    display: flex !important;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid var(--border);
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  .nav-dropdown-label { display: none; }
   .hero { grid-template-columns: 1fr; }
   .hero-photo { display: none; }
   .about-body { grid-template-columns: 1fr; gap: 2rem; }

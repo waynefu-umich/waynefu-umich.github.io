@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal 2 — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Second journal uses a slightly different accent to distinguish it visually */
+    :root {
+      --accent: #2a6db5;
+      --accent-light: #c2d9f0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-name"><a href="index.html">Your Name</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="work.html">Work & Publications</a></li>
+      <li class="nav-dropdown">
+        <span class="nav-dropdown-label active">Journal ▾</span>
+        <ul class="dropdown-menu">
+          <li><a href="journal.html">Journal: [Topic 1]</a></li>
+          <li><a href="journal2.html" class="active">Journal: [Topic 2]</a></li>
+        </ul>
+      </li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <main class="page-inner">
+
+    <div class="page-header">
+      <span class="page-label">Journal II</span>
+      <h1>Weekly Notes on<br><em>[Topic 2]</em></h1>
+      <p class="page-subtitle">Updated weekly — a thinking log, not polished writing</p>
+    </div>
+
+    <section class="journal-intro">
+      <p class="lead">This second journal tracks my reading and thinking on [Topic 2]. It runs parallel to my <a href="journal.html">notes on [Topic 1]</a>. Same format: weekly, informal, honest about uncertainty.</p>
+    </section>
+
+    <!-- TAG FILTER -->
+    <div class="journal-filters">
+      <span class="filter-label">Filter:</span>
+      <button class="tag-btn active" onclick="filterEntries('all')">All</button>
+      <button class="tag-btn" onclick="filterEntries('theory')">Theory</button>
+      <button class="tag-btn" onclick="filterEntries('reading')">Reading</button>
+      <button class="tag-btn" onclick="filterEntries('data')">Data</button>
+      <button class="tag-btn" onclick="filterEntries('questions')">Open Questions</button>
+    </div>
+
+    <!-- JOURNAL ENTRIES — add new ones at the TOP -->
+    <section class="journal-entries">
+
+      <!-- ENTRY TEMPLATE: Copy this block and paste above to add a new entry -->
+      <article class="journal-entry" data-tags="theory reading">
+        <div class="entry-meta">
+          <span class="entry-date">Week of April 14, 2026</span>
+          <div class="entry-tags">
+            <span>Theory</span>
+            <span>Reading</span>
+          </div>
+        </div>
+        <h2 class="entry-title">First entry on [Topic 2]</h2>
+        <div class="entry-body">
+          <p>Write freely here. What drew you to this topic this week? What did you read, notice, or puzzle over? This is a space to think out loud — no need to be conclusive.</p>
+          <p>These notes work best when you're specific: name the paper, describe the argument, say what you found useful or unconvincing.</p>
+          <h3>Papers / Sources</h3>
+          <ul>
+            <li>Author (Year). "Paper Title." <em>Journal</em>. — Why it matters to you.</li>
+            <li>Author (Year). "Another Source." <em>Venue</em>. — What you took from it.</li>
+          </ul>
+          <h3>An open question</h3>
+          <p>What's something you don't know yet that this week raised? Logging questions is as useful as logging answers.</p>
+        </div>
+      </article>
+      <!-- END ENTRY TEMPLATE -->
+
+      <article class="journal-entry" data-tags="questions">
+        <div class="entry-meta">
+          <span class="entry-date">Week of April 7, 2026</span>
+          <div class="entry-tags">
+            <span>Open Questions</span>
+          </div>
+        </div>
+        <h2 class="entry-title">Why I started tracking [Topic 2]</h2>
+        <div class="entry-body">
+          <p>Explain what drew you to this second topic and how it connects (or doesn't) to your main research. Is it adjacent? Tangential? A long-standing interest you finally want to develop?</p>
+          <p>Setting context for yourself and for readers is a good way to begin a new log.</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Your Name · Built with care</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function filterEntries(tag) {
+      const entries = document.querySelectorAll('.journal-entry');
+      const btns = document.querySelectorAll('.tag-btn');
+      btns.forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      entries.forEach(entry => {
+        if (tag === 'all' || entry.dataset.tags.includes(tag)) {
+          entry.style.display = 'block';
+        } else {
+          entry.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

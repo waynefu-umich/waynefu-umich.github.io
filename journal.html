@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-name"><a href="index.html">Your Name</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="work.html">Work & Publications</a></li>
+      <li><a href="journal.html" class="active">Journal</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <main class="page-inner">
+
+    <div class="page-header">
+      <span class="page-label">Journal</span>
+      <h1>Weekly <em>Notes</em></h1>
+      <p class="page-subtitle">Ongoing notes on [topic] — updated weekly</p>
+    </div>
+
+    <section class="journal-intro">
+      <p class="lead">This is a running log of my thinking on [topic]. I write here weekly to track how my understanding evolves, note useful papers or ideas, and think out loud. These are working notes — not polished arguments.</p>
+    </section>
+
+    <!-- TAG FILTER -->
+    <div class="journal-filters">
+      <span class="filter-label">Filter:</span>
+      <button class="tag-btn active" onclick="filterEntries('all')">All</button>
+      <button class="tag-btn" onclick="filterEntries('reading')">Reading</button>
+      <button class="tag-btn" onclick="filterEntries('ideas')">Ideas</button>
+      <button class="tag-btn" onclick="filterEntries('methods')">Methods</button>
+      <button class="tag-btn" onclick="filterEntries('field')">Field Notes</button>
+    </div>
+
+    <!-- JOURNAL ENTRIES — add new ones at the TOP -->
+    <section class="journal-entries">
+
+      <!-- ENTRY: Copy this block to add a new weekly entry -->
+      <article class="journal-entry" data-tags="ideas reading">
+        <div class="entry-meta">
+          <span class="entry-date">Week of April 14, 2026</span>
+          <div class="entry-tags">
+            <span>Ideas</span>
+            <span>Reading</span>
+          </div>
+        </div>
+        <h2 class="entry-title">What I've been thinking about this week</h2>
+        <div class="entry-body">
+          <p>Write freely here. What papers did you read? What ideas emerged? What confused you? What clicked? This is your thinking space — no need to be formal or conclusive.</p>
+          <p>You can include questions you're sitting with: <em>Why does X work this way? What would happen if Y?</em></p>
+          <h3>Papers / Sources</h3>
+          <ul>
+            <li>Author (Year). "Paper Title." <em>Journal</em>. — One sentence on why it matters.</li>
+            <li>Author (Year). "Another Paper." <em>Conference</em>. — What you took from it.</li>
+          </ul>
+          <h3>A thought</h3>
+          <p>One idea worth sitting with longer. Maybe a connection you made, a question you can't shake, or something you want to explore next week.</p>
+        </div>
+      </article>
+      <!-- END ENTRY -->
+
+      <article class="journal-entry" data-tags="methods">
+        <div class="entry-meta">
+          <span class="entry-date">Week of April 7, 2026</span>
+          <div class="entry-tags">
+            <span>Methods</span>
+          </div>
+        </div>
+        <h2 class="entry-title">A methodological puzzle</h2>
+        <div class="entry-body">
+          <p>This week I got stuck on a methods question. Describe the puzzle — writing it out often helps clarify it. This is exactly the kind of thing worth logging.</p>
+          <p>I tried [approach A] but ran into [problem]. Then I read [reference] which suggested [alternative]. Still not sure which direction to go.</p>
+          <h3>Resources</h3>
+          <ul>
+            <li>Author (Year). "Relevant Paper." <em>Journal</em>. — Context.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="journal-entry" data-tags="field reading">
+        <div class="entry-meta">
+          <span class="entry-date">Week of March 31, 2026</span>
+          <div class="entry-tags">
+            <span>Field Notes</span>
+            <span>Reading</span>
+          </div>
+        </div>
+        <h2 class="entry-title">First entry — why I'm keeping this log</h2>
+        <div class="entry-body">
+          <p>Explain why you started this journal. What topic are you tracking? What do you hope keeping these notes will do for your thinking over time?</p>
+          <p>Setting the stage for whoever reads this (including future you).</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Your Name · Built with care</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function filterEntries(tag) {
+      const entries = document.querySelectorAll('.journal-entry');
+      const btns = document.querySelectorAll('.tag-btn');
+      btns.forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      entries.forEach(entry => {
+        if (tag === 'all' || entry.dataset.tags.includes(tag)) {
+          entry.style.display = 'block';
+        } else {
+          entry.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

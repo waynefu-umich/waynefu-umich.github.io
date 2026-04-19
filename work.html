@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work & Publications — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-name"><a href="index.html">Your Name</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="work.html" class="active">Work & Publications</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <main class="page-inner">
+
+    <div class="page-header">
+      <span class="page-label">Work</span>
+      <h1>Work & <em>Publications</em></h1>
+      <p class="page-subtitle">Ongoing projects and published work</p>
+    </div>
+
+    <!-- ONGOING WORK -->
+    <section class="work-section">
+      <h2 class="section-heading">Current Projects</h2>
+
+      <div class="project-card active-project">
+        <div class="project-status">In Progress</div>
+        <h3>Project Title One</h3>
+        <p class="project-collab">With [Collaborator Name] · [Institution]</p>
+        <p>Describe what this project is about, what you're trying to find out, and where it currently stands. Be as specific as useful — this is often the first thing other researchers look at.</p>
+        <div class="project-links">
+          <a href="#">Pre-print →</a>
+          <a href="#">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card active-project">
+        <div class="project-status">In Progress</div>
+        <h3>Project Title Two</h3>
+        <p class="project-collab">Solo project</p>
+        <p>Brief description of this ongoing work. What stage is it in? What are the key findings so far? When do you expect to publish or present?</p>
+        <div class="project-links">
+          <a href="#">Draft available on request</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="work-section">
+      <h2 class="section-heading">Publications</h2>
+
+      <div class="pub-year-group">
+        <span class="pub-year">2025</span>
+        <div class="pub-list">
+
+          <div class="pub-entry">
+            <p class="pub-title">Title of Published Paper or Article</p>
+            <p class="pub-meta"><strong>Your Name</strong>, Co-author A, Co-author B</p>
+            <p class="pub-venue"><em>Journal Name</em>, Vol. X, No. Y, pp. 000–000</p>
+            <div class="pub-links">
+              <a href="#">PDF</a>
+              <a href="#">DOI</a>
+              <a href="#">Abstract</a>
+            </div>
+          </div>
+
+          <div class="pub-entry">
+            <p class="pub-title">Title of Conference Paper or Proceedings</p>
+            <p class="pub-meta"><strong>Your Name</strong>, Co-author A</p>
+            <p class="pub-venue"><em>Conference Name (ABBR)</em>, City, 2025</p>
+            <div class="pub-links">
+              <a href="#">PDF</a>
+              <a href="#">Slides</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pub-year-group">
+        <span class="pub-year">2024</span>
+        <div class="pub-list">
+
+          <div class="pub-entry">
+            <p class="pub-title">Title of Earlier Publication</p>
+            <p class="pub-meta"><strong>Your Name</strong>, Co-author A, Co-author B, Co-author C</p>
+            <p class="pub-venue"><em>Journal Name</em>, Vol. X, No. Y</p>
+            <div class="pub-links">
+              <a href="#">PDF</a>
+              <a href="#">DOI</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="work-section">
+      <h2 class="section-heading">Talks & Presentations</h2>
+
+      <div class="talk-list">
+        <div class="talk-entry">
+          <span class="talk-date">Mar 2025</span>
+          <div class="talk-info">
+            <p class="talk-title">"Talk Title Here"</p>
+            <p class="talk-venue">Conference or Seminar Name · City</p>
+          </div>
+          <a href="#" class="talk-link">Slides →</a>
+        </div>
+        <div class="talk-entry">
+          <span class="talk-date">Nov 2024</span>
+          <div class="talk-info">
+            <p class="talk-title">"Another Talk Title"</p>
+            <p class="talk-venue">Workshop Name · Virtual</p>
+          </div>
+          <a href="#" class="talk-link">Recording →</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Your Name · Built with care</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

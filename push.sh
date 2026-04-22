@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "Fix CV link, nav HTML, grammar, bio location, Scholar profile, filter tag"
+git commit -m "feat(journal): rename Journal I to Aftermarket Dynamics, broaden scope to warranty, R2R, reverse logistics, circular economy"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

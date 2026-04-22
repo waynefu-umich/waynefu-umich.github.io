@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "feat(journal): rename Journal I to Aftermarket Dynamics, broaden scope to warranty, R2R, reverse logistics, circular economy"
+git commit -m "feat(work): hide research in progress section, save content to md for review"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

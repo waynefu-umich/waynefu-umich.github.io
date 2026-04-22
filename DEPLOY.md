@@ -71,12 +71,12 @@ Wait 1–2 minutes, then visit: `https://yourusername.github.io`
 
 ---
 
-## How to Update Your Site Weekly (Journal entries)
+## How to Update Your Site Periodically (Journal entries)
 
 Every time you want to add a new journal entry:
 
 1. Open `journal.html` in any text editor (VS Code, Notepad, TextEdit)
-2. Find the comment that says `<!-- ENTRY: Copy this block to add a new weekly entry -->`
+2. Find the comment that says `<!-- ENTRY: Copy this block to add a new periodic entry -->`
 3. Copy the entire `<article>...</article>` block
 4. Paste it **above** the existing first entry
 5. Update the date, title, tags, and content
@@ -116,4 +116,4 @@ If you have a domain (e.g., `yourname.com`):
 
 - GitHub Pages docs: https://docs.github.com/en/pages
 - Git basics: https://rogerdudler.github.io/git-guide/
-- Or ask Claude to help debug any error messages
+- Or ask Claude to help debug any error m

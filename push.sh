@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "feat(work): hide research in progress section, save content to md for review"
+git commit -m "style(work): show full DOI URLs as link text in publications"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

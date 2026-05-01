@@ -1,18 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <defs>
-    <radialGradient id="bg" cx="45%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#2255CC"/>
-      <stop offset="100%" stop-color="#0A1F8F"/>
-    </radialGradient>
-  </defs>
-  <!-- Blue circle background -->
-  <circle cx="100" cy="100" r="96" fill="url(#bg)"/>
-  <circle cx="100" cy="100" r="96" fill="none" stroke="#1a3aaa" stroke-width="1"/>
-  <!-- "i" letterform -->
-  <circle cx="62" cy="52" r="9" fill="white"/>
-  <rect x="55" y="68" width="14" height="68" rx="3" fill="white"/>
-  <!-- "2" letterform -->
-  <path d="M90 60 C90 42 108 36 122 42 C136 48 140 62 132 74 C126 82 108 90 96 106 L140 106 L140 120 L88 120 L88 108 C102 90 122 80 128 68 C132 60 126 50 116 49 C108 48 102 54 102 62 Z" fill="white"/>
-  <!-- Registered trademark -->
-  <text x="148" y="78" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="normal">®</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" width="220" height="110">
+  <!-- White background -->
+  <rect width="220" height="110" fill="white"/>
+
+  <!-- Brushstroke / calligraphic "i2" mark -->
+  <!-- The "i" — thin upstroke with a distinctive dot -->
+  <ellipse cx="52" cy="14" rx="5" ry="4.5" fill="#1a1a1a" transform="rotate(-8,52,14)"/>
+  <!-- i stem — thin brushstroke going down-right -->
+  <path d="M46 24 Q48 38 50 52 Q51 60 53 68" stroke="#1a1a1a" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- The "2" — flowing brushstroke -->
+  <!-- Top curve of 2 -->
+  <path d="M55 28 Q60 15 74 16 Q90 17 91 30 Q92 42 76 52 Q65 59 55 70 L93 70" stroke="#1a1a1a" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Slight thickening at bottom bar of 2 -->
+  <path d="M54 70 L94 70" stroke="#1a1a1a" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Underline / tail flourish extending right -->
+  <path d="M94 70 Q130 65 160 55" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Black bar at bottom -->
+  <rect x="0" y="80" width="220" height="30" fill="#1a1a1a"/>
+  <text x="110" y="101" font-family="'Arial Narrow', Arial, sans-serif" font-size="13.5" font-weight="400" fill="white" text-anchor="middle" letter-spacing="3">i2 Technologies</text>
 </svg>

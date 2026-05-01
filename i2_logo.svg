@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#2255CC"/>
+      <stop offset="100%" stop-color="#0A1F8F"/>
+    </radialGradient>
+  </defs>
+  <!-- Blue circle background -->
+  <circle cx="100" cy="100" r="96" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#1a3aaa" stroke-width="1"/>
+  <!-- "i" letterform -->
+  <circle cx="62" cy="52" r="9" fill="white"/>
+  <rect x="55" y="68" width="14" height="68" rx="3" fill="white"/>
+  <!-- "2" letterform -->
+  <path d="M90 60 C90 42 108 36 122 42 C136 48 140 62 132 74 C126 82 108 90 96 106 L140 106 L140 120 L88 120 L88 108 C102 90 122 80 128 68 C132 60 126 50 116 49 C108 48 102 54 102 62 Z" fill="white"/>
+  <!-- Registered trademark -->
+  <text x="148" y="78" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="normal">®</text>
+</svg>

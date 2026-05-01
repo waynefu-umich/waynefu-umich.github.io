@@ -21,8 +21,8 @@
           <li><a href="journal2.html">Chemical Use</a></li>
         </ul>
       </li>
-      <li><a href="industry.html" class="active">Industry Stories</a></li>
       <li><a href="research.html">Research</a></li>
+      <li><a href="industry.html" class="active">Industry Stories</a></li>
       <li><a href="work.html">Work &amp; Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
     </ul>
@@ -34,7 +34,7 @@
     <div class="page-header">
       <span class="page-label">Industry Stories</span>
       <h1>Before the Research,<br><em>the Past Work</em></h1>
-      <p class="page-subtitle">Fourteen years in enterprise software — chasing down bad data in client warehouses, shipping product roadmaps, and learning what the textbooks leave out.</p>
+      <p class="page-subtitle">Twelve years in enterprise software — chasing down bad data in client warehouses, shipping product roadmaps, and learning what the textbooks leave out.</p>
     </div>
 
     <!-- ── INTRO ── -->
@@ -132,62 +132,4 @@
         <p>I wrote about this confusion extensively because I kept running into it in client engagements — planners who couldn't articulate which type they were tracking, service contracts written in terms that were ambiguous about the measurement basis, and vendor benchmarks that cherry-picked definitions to make their performance look better. Academic treatments of this topic often didn't help, modeling one or the other without acknowledging the practical consequences of which you choose.</p>
 
         <h3 class="story-section-head">Multi-Echelon Inventory Optimization</h3>
-        <p>A large service organization might have parts stocked at a central depot, several regional warehouses, and hundreds of field technician vehicles — a three- or four-echelon network. The classic single-location inventory model doesn't come close to capturing this. The optimization problem involves not just how much to stock at each location, but how to balance stock across levels to minimize both cost and response time simultaneously.</p>
-        <p>The academic literature on this problem — running from Sherbrooke's METRIC model through the competing frameworks of Muckstadt (Cornell) and Cohen (Wharton) — is rich and genuinely difficult. I was fortunate enough to see this academic tension play out in person when Servigistics hosted its annual eXchange sales conference and invited both Muckstadt and Cohen to present. These are two intellectual giants who had spent over a decade as competitors — academically and commercially — and the contrast in their styles was striking: Muckstadt with the rigor of an engineer (jet engine photos, dense mathematics), Cohen with the fluency of a business school professor. Each framework has genuine merits and genuine blind spots. Working on product that had to implement a version of these solutions in real customer environments meant navigating those trade-offs daily.</p>
-
-        <div class="story-book-ref">
-          <a href="https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156" target="_blank" class="story-book-cover-link">
-            <img src="https://m.media-amazon.com/images/I/61DR6qXoiZL._SY425_.jpg"
-                 alt="Analysis and Algorithms for Service Parts Supply Chains — Muckstadt"
-                 class="story-book-cover"/>
-          </a>
-          <div class="story-book-meta">
-            <p class="story-book-title"><em>Analysis and Algorithms for Service Parts Supply Chains</em></p>
-            <p class="story-book-author">John A. Muckstadt &middot; Springer, 2005</p>
-            <p class="story-book-note">This is the foundational text behind the multi-echelon algorithms Servigistics commercialized. Our connection with Dr. Muckstadt at Cornell gave the product team direct access to the intellectual lineage of METRIC and its successors &mdash; and a front-row seat to the ongoing debate between two of the field&#8217;s defining frameworks.</p>
-          </div>
-        </div>
-
-        <h3 class="story-section-head">Reverse Logistics</h3>
-        <p>Service parts don't just flow out — they flow back. A failed part gets replaced and returned. Cores get refurbished and re-enter the supply chain. Warranties generate reverse flows that need to be tracked, sorted, and valued. The reverse logistics module was in many ways the most underdeveloped part of the product when I took it on, partly because the problem is genuinely hard — the condition of returned parts is uncertain, the timing is unpredictable, and the economic value of a returned core depends on the cost of sourcing a new one.</p>
-        <p>The operational complexity of reverse logistics in service contexts was part of what eventually drew me toward research on remanufacturing, warranty strategy, and the circular economy. The aftermarket parts ecosystem also raises a pointed strategic question: should an OEM control the service parts supply chain tightly, or let third-party suppliers compete? The options range from fully open markets to complete proprietary control — and the right answer depends on product price, part criticality, and brand strategy in ways that don't reduce to a simple formula. I developed a strategic matrix for this decision that I used with clients, built around product price versus maintenance cost, and separately, system availability versus part criticality.</p>
-
-        <h3 class="story-section-head">Post-Sales Service Pricing</h3>
-        <p>One of the least-studied corners of operations management — at least at the time I was working in it — was how to actually price a service contract. Not just what the market would bear, but what the cost structure actually supported. The challenge is that it sits at the intersection of insurance pricing (you're underwriting a risk) and services pricing (you're selling labor and expertise). Most companies I worked with were using either a naive cost-plus approach, a market-comparison approach that mostly amounted to guessing, or an "include it in the product price and figure it out later" strategy that effectively obscured all the real economics.</p>
-        <p>The aviation industry was furthest along — driven by the need to price things like Power by the Hour agreements for jet engines, where the customer pays per flight hour rather than buying the engine outright. The Total Ownership Cost (TOC) framing — accounting for acquisition, operation, maintenance, and end-of-life disposal — makes the service-as-subscription model legible in a way that pure product pricing doesn't. I argued then, and still believe, that as the economy shifted toward service-dominant logic, TOC literacy would become a competitive necessity across industries. The companies that could model their customers' true ownership costs and build service contracts around them would systematically outcompete those that couldn't.</p>
-
-        <h3 class="story-section-head">The Research Question I Couldn't Answer on the Job</h3>
-        <p>By the time I left Servigistics to pursue a PhD, I had a list of questions I couldn't answer from inside a product organization. Why do firms systematically underinvest in service parts planning even when the ROI is demonstrable? How does the structure of warranty contracts shape the incentives of service providers — and through them, the operational decisions that determine whether customers get good service? What does "transparency" mean in a supply chain where every participant has information the others don't?</p>
-        <p>Those questions led me to Georgia Tech, to the work of Ravi Subramanian and Atalay Atasu, and eventually to the research agenda I'm still pursuing. The industry years didn't just inform my research — they gave it its urgency.</p>
-
-        <div class="story-domain-row">
-          <span class="story-domain">Service Parts Planning</span>
-          <span class="story-domain">Intermittent Demand / Croston</span>
-          <span class="story-domain">Fill Rate (Type 1 &amp; 2)</span>
-          <span class="story-domain">Multi-Echelon Inventory</span>
-          <span class="story-domain">Reverse Logistics</span>
-          <span class="story-domain">Service Pricing &amp; TOC</span>
-          <span class="story-domain">Aftermarket Strategy</span>
-          <span class="story-domain">Product Management</span>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ── BRIDGE ── -->
-    <section class="story-bridge">
-      <h2>Why It Matters for Research &amp; Teaching</h2>
-      <p>Most operations management research begins with a model — a stylized representation of a supply chain, a contract, a firm's decision problem. The art of building a good model is knowing which simplifications to make and which to resist. My industry experience gives me a calibration for that judgment that I couldn't have developed from the literature alone.</p>
-      <p>In the classroom, it means I can tell students not just what the theory says, but where the theory breaks — and why that matters. The student who goes on to manage a service parts network will not face a Poisson demand process; they'll face a messy mixture of intermittent demand, legacy data, and organizational politics. Knowing that the model is an approximation — and a useful one — is a different kind of knowledge than knowing the model.</p>
-      <p>The decade-plus I spent in industry is not a detour from the academic path. It is the reason the academic questions I ask are the ones I ask.</p>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Wayne Fu · University of Michigan-Dearborn · <a href="mailto:waynefu@umich.edu">waynefu@umich.edu</a></p>
-  </footer>
-
-  <script src="nav.js"></script>
-</body>
-</html>
+        <p>A large service organization might have parts stocked at a central depot, several regional warehouses, and hundreds of field technician vehicles — a three- or four-echelon network. The classic s

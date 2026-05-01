@@ -138,7 +138,7 @@ main { flex: 1; }
 .page-about { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
 .hero {
-  display: grid; grid-template-columns: 1fr 338px;
+  display: grid; grid-template-columns: 1fr 260px;
   gap: 4rem; align-items: end;
   padding: 5rem 0 4rem;
   border-bottom: 1px solid var(--border);
@@ -274,23 +274,6 @@ main { flex: 1; }
   display: flex; gap: 0.45rem; flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-
-/* Book reference block */
-.story-book-ref {
-  display: flex; gap: 1.5rem; align-items: flex-start;
-  margin: 1.75rem 0; padding: 1.25rem 1.5rem;
-  background: var(--paper-warm); border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-}
-.story-book-cover-link { flex-shrink: 0; }
-.story-book-cover {
-  width: 90px; height: auto; display: block;
-  border: 1px solid var(--border); box-shadow: 2px 3px 8px rgba(0,0,0,0.12);
-}
-.story-book-meta { flex: 1; }
-.story-book-title { font-size: 1rem; font-weight: 600; margin: 0 0 0.25rem; }
-.story-book-author { font-family: var(--mono); font-size: 0.75rem; color: var(--ink-light); margin: 0 0 0.6rem; }
-.story-book-note { font-size: 0.9rem; color: var(--ink-mid); margin: 0; line-height: 1.6; }
 
 .story-domain {
   font-family: var(--mono); font-size: 0.65rem;

@@ -21,8 +21,8 @@
           <li><a href="journal2.html">Chemical Use</a></li>
         </ul>
       </li>
-      <li><a href="industry.html">Industry Stories</a></li>
       <li><a href="research.html">Research</a></li>
+      <li><a href="industry.html">Industry Stories</a></li>
       <li><a href="work.html" class="active">Work &amp; Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
     </ul>
@@ -34,7 +34,7 @@
     <div class="page-header">
       <span class="page-label">Work</span>
       <h1>Publications & <em>Work</em></h1>
-      <p class="page-subtitle">Published articles, presentations, and media coverage</p>
+      <p class="page-subtitle">Published work, presentations, and media coverage</p>
     </div>
 
     <!-- RESEARCH IN PROGRESS (hidden 2026-04-22; content saved in research-in-progress-hidden.md)
@@ -410,4 +410,30 @@
           <div class="talk-entry">
             <span class="talk-date">2018</span>
             <div class="talk-info">
-              <p class="talk-title"><a href="https://umdearborn.edu/news/new-um-dearborn-student-research-program
+              <p class="talk-title"><a href="https://umdearborn.edu/news/new-um-dearborn-student-research-program-celebrates-successful-pilot-run" target="_blank">A New UM-Dearborn Student Research Program Celebrates a Successful Pilot Run</a></p>
+              <p class="talk-venue">UM-Dearborn Reporter</p>
+            </div>
+          </div>
+
+          <div class="talk-entry">
+            <span class="talk-date">2018</span>
+            <div class="talk-info">
+              <p class="talk-title"><a href="https://phys.org/news/2018-05-toxic-chemicals-curbs-industrial.html" target="_blank">Shining a Light on Toxic Chemicals Curbs Industrial Use</a></p>
+              <p class="talk-venue">Phys.Org · Also covered in Science Daily, M&amp;SOM Review, Georgia Tech Research Horizons, UM-Dearborn Reporter</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Wayne Fu · University of Michigan-Dearborn · <a href="mailto:waynefu@umich.edu">waynefu@umich.edu</a></p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

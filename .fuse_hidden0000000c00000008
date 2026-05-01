@@ -21,8 +21,8 @@
           <li><a href="journal2.html">Chemical Use</a></li>
         </ul>
       </li>
-      <li><a href="industry.html">Industry Stories</a></li>
       <li><a href="research.html">Research</a></li>
+      <li><a href="industry.html">Industry Stories</a></li>
       <li><a href="work.html">Work &amp; Publications</a></li>
       <li><a href="teaching.html" class="active">Teaching</a></li>
     </ul>

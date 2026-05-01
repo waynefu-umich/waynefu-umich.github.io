@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "chore: add CLAUDE.md and git-remove-lock skill"
+git commit -m "chore(home): swap profile photo + switch frame to 4:3 landscape"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

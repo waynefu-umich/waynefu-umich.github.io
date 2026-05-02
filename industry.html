@@ -115,6 +115,26 @@
     }
     .story-clients-img-wrap { margin-bottom: 0.5rem; }
     .story-clients-img { max-width: 100%; border-radius: 4px; }
+    /* Company logos in markdown */
+    #story-content h2 + p > img {
+      max-height: 52px;
+      max-width: 200px;
+      width: auto;
+      display: block;
+      margin: 0.6rem 0 1rem;
+      object-fit: contain;
+    }
+
+    /* Book cover */
+    #story-content a > img {
+      max-height: 160px;
+      width: auto;
+      display: block;
+      margin: 1.2rem 0 0.6rem;
+      border-radius: 3px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+
     .story-clients-caption {
       font-family: 'Source Serif 4', serif;
       font-size: 0.88rem;

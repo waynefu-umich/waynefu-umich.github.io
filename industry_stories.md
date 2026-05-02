@@ -14,6 +14,8 @@ This page is an attempt to connect my career dots, not a résumé entry, and to 
 
 i2 Technologies
 
+![i2 Technologies](i2_logo.png)
+
 Now Blue Yonder · Dallas, TX & Tokyo, Japan
 Consultant & Solution Manager
 
@@ -55,6 +57,8 @@ Topics: Supply Chain Planning · Demand Forecasting · Inventory Optimization ·
 
 Servigistics
 
+![Servigistics](Servigsitics_logo.jpg)
+
 Acquired by PTC · Atlanta, GA
 Director of Product Management
 
@@ -88,7 +92,9 @@ A large service organization might have parts stocked at a central depot, severa
 
 The academic literature on this problem — running from Sherbrooke’s METRIC model through the frameworks of Dr. Muckstadt (Cornell) — is rich and genuinely difficult.
 
-📖 Analysis and Algorithms for Service Parts Supply Chains — John A. Muckstadt · Springer, 2005
+[![Analysis and Algorithms for Service Parts Supply Chains — Muckstadt](https://m.media-amazon.com/images/I/61DR6qXoiZL._SY425_.jpg)](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)
+
+📖 **[Analysis and Algorithms for Service Parts Supply Chains](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)** — John A. Muckstadt · Springer, 2005
 The foundational text behind the multi-echelon algorithms Servigistics commercialized. Our connection with Dr. Muckstadt at Cornell gave the product team direct access to the intellectual lineage of METRIC and its successors — and a front-row seat to the ongoing debate between two of the field’s defining frameworks.
 
 Reverse Logistics

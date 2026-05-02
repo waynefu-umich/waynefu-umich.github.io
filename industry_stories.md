@@ -4,7 +4,7 @@ More than a decade in enterprise software — chasing down missing data in clien
 
 ---
 
-Intro
+## Intro
 
 I came to academic research the long way around. Before I ever set foot in a PhD program, I spent over a decade working in operations at global companies — first as a consultant and solution manager, deploying supply chain software from i2 Technologies, then as Director of Product Management at Servigistics, building the planning solutions that facilitate aftermarket service operations.
 

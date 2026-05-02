@@ -155,8 +155,8 @@
         </ul>
       </li>
       <li><a href="industry.html" class="active">Industry Stories</a></li>
-      <li><a href="research.html">Research</a></li>
       <li><a href="work.html">Work &amp; Publications</a></li>
+      <li><a href="research.html">Research</a></li>
       <li><a href="teaching.html">Teaching</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleNav()">☰</button>
@@ -167,7 +167,7 @@
     <div class="page-header">
       <span class="page-label">Industry Stories</span>
       <h1>Before the Research,<br><em>the Past Work</em></h1>
-      <p class="page-subtitle">Fourteen years in enterprise software — chasing down bad data in client warehouses, shipping product roadmaps, and learning what the textbooks leave out.</p>
+      <p class="page-subtitle">More than a decade in enterprise software — chasing down missing data in client warehouses, shipping product roadmaps, and learning what the textbooks leave out.</p>
     </div>
 
     <!-- ── CLIENT LOGOS (static) ── -->
@@ -205,8 +205,6 @@
         // Skip blank + first ---
         if (lines[0].trim() === '') { lines.shift(); }
         if (lines[0].trim() === '---') { lines.shift(); }
-        // Skip ## Intro heading (content flows naturally after page header)
-        if (lines[0].trim() === '## Intro') { lines.shift(); }
 
         document.getElementById('story-content').innerHTML = marked.parse(lines.join('\n'));
 

@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "docs(nav): rename \"work & publication\" to \"current work\""
+git commit -m "feat(work): add MS Business Analytics video to Media & Press section"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

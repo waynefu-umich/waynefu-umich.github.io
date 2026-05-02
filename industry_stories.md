@@ -90,24 +90,22 @@ I wrote about this confusion extensively because I kept running into it in clien
 
 A large service organization might have parts stocked at a central depot, several regional warehouses, and hundreds of field technician vehicles — a three- or four-echelon network. The classic single-location inventory model doesn't come close to capturing this. The optimization problem involves not just how much to stock at each location, but how to balance stock across levels to minimize both cost and response time simultaneously.
 
-The academic literature on this problem — running from Sherbrooke's METRIC model through the frameworks of Dr. Muckstadt (Cornell) — is rich and genuinely difficult.
-
-[![Analysis and Algorithms for Service Parts Supply Chains — Muckstadt](https://m.media-amazon.com/images/I/61DR6qXoiZL._SY425_.jpg)](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)
-
-📖 **[Analysis and Algorithms for Service Parts Supply Chains](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)** — John A. Muckstadt · Springer, 2005
-The foundational text behind the multi-echelon algorithms Servigistics commercialized. Our connection with Dr. Muckstadt at Cornell gave the product team direct access to the intellectual lineage of METRIC and its successors — and a front-row seat to the ongoing debate between two of the field's defining frameworks.
-
 For a general audience unfamiliar with MEIO, the video below offers a reasonable visual introduction to the problem structure:
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1.5rem 0;">
 <iframe src="https://www.youtube.com/embed/si8Klzl80Ww" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="Multi-Echelon Inventory Optimization — Introduction"></iframe>
 </div>
 
-That said, the video should be taken for what it is — a pleasant, high-level overview, not a serious treatment of the problem. It conveys the intuition that decentralized safety stock decisions produce suboptimal system-wide outcomes, and that coordinating across echelons can reduce total inventory cost. Beyond that, it offers little analytical substance.
+The academic literature on this problem — running from Sherbrooke's METRIC model through the frameworks of Dr. Muckstadt (Cornell) — is rich and genuinely difficult. That said, the video should be taken for what it is — a pleasant, high-level overview, not a serious treatment of the problem. It conveys the intuition that decentralized safety stock decisions produce suboptimal system-wide outcomes, and that coordinating across echelons can reduce total inventory cost. Beyond that, it offers little analytical substance.
 
 **MEIO is fundamentally a difficult non-linear optimization problem.** Safety stock decisions interact across echelons in non-linear ways: the demand variance seen at an upstream node depends on ordering behavior downstream, which in turn depends on service level targets, lead time distributions, and demand patterns that are rarely stationary. Exact solutions exist only under restrictive assumptions (serial networks, stationary Poisson or normal demand, as in the Clark-Scarf framework). Real service parts networks — divergent structures, thousands of SKUs, intermittent demand, probabilistic lead times — require approximation methods, simulation-based optimization, or decomposition heuristics, none of which are off-the-shelf. Getting them to perform reliably in production requires significant engineering effort, domain calibration, and continuous retuning as network conditions change. The computational cost scales quickly: stochastic formulations grow exponentially in the number of scenarios, and even moderately complex networks can make exact optimization intractable.
 
 A note on the video's source: it is produced by **INFORM**, a German software and consulting company. INFORM should not be confused with **[INFORMS](https://www.informs.org)** — the Institute for Operations Research and the Management Sciences — which is the leading academic society in the OR/MS field and the home of journals like *Operations Research*, *Management Science*, and *M&SOM*. INFORM is a vendor; INFORMS is the scientific community. The video reflects the former's commercial interest in making MEIO appear approachable. The academic literature — grounded in the work of Sherbrooke, Muckstadt, Graves, Willems, and Zipkin — tells a substantially harder story.
+
+[![Analysis and Algorithms for Service Parts Supply Chains — Muckstadt](https://m.media-amazon.com/images/I/61DR6qXoiZL._SY425_.jpg)](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)
+
+📖 **[Analysis and Algorithms for Service Parts Supply Chains](https://www.amazon.com/Analysis-Algorithms-Operations-Financial-Engineering/dp/0387227156)** — John A. Muckstadt · Springer, 2005
+The foundational text behind the multi-echelon algorithms Servigistics commercialized. Our connection with Dr. Muckstadt at Cornell gave the product team direct access to the intellectual lineage of METRIC and its successors — and a front-row seat to the ongoing debate between two of the field's defining frameworks.
 
 ### Reverse Logistics
 

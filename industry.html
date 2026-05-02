@@ -104,43 +104,40 @@
     /* Client logos (static, not from md) */
     .story-clients {
       margin: 0 0 2.5rem;
-    }
-    .story-clients-label {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-muted, #999);
-      margin-bottom: 0.75rem;
+      text-align: center;
     }
     .story-clients-img-wrap { margin-bottom: 0.5rem; }
     .story-clients-img { max-width: 100%; border-radius: 4px; }
-    /* Company logos in markdown */
-    #story-content h2 + p > img {
-      max-height: 52px;
-      max-width: 200px;
+    .story-clients-caption {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text-muted, #999);
+      margin-top: 0.6rem;
+    }
+
+    /* Company logos in markdown (linked or plain) */
+    #story-content h2 + p img {
+      max-height: 48px;
+      max-width: 180px;
       width: auto;
+      height: 48px;
       display: block;
       margin: 0.6rem 0 1rem;
       object-fit: contain;
+      object-position: left center;
     }
 
-    /* Book cover */
-    #story-content a > img {
+    /* Book cover specifically (external Amazon src) */
+    #story-content img[src*="amazon"] {
       max-height: 160px;
+      height: auto;
       width: auto;
       display: block;
       margin: 1.2rem 0 0.6rem;
       border-radius: 3px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    }
-
-    .story-clients-caption {
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.88rem;
-      color: var(--text-muted, #777);
-      line-height: 1.55;
-      max-width: 680px;
     }
   </style>
 </head>
@@ -175,11 +172,10 @@
 
     <!-- ── CLIENT LOGOS (static) ── -->
     <section class="story-clients">
-      <p class="story-clients-label">A Partial List of Industry Clients</p>
       <div class="story-clients-img-wrap">
         <img src="client.png" alt="Industry clients including Epson, Toshiba, Honda, Boeing, Air Canada, Embraer, Daikin, Applied Materials, Acer, Southwest Airlines, Komatsu, Freightliner, Ericsson, Renault Trucks, Volvo, TSMC, U.S. Air Force, Volkswagen, and IDT" class="story-clients-img"/>
       </div>
-      <p class="story-clients-caption">Across fourteen years in enterprise software, I worked directly with Fortune 500 manufacturers, aerospace OEMs, semiconductor foundries, and global service organizations — deploying supply chain and service parts planning systems at scale.</p>
+      <p class="story-clients-caption">A Partial List of Industry Clients</p>
     </section>
 
     <!-- ── STORY CONTENT (loaded from industry_stories.md) ── -->
@@ -213,6 +209,12 @@
         if (lines[0].trim() === '## Intro') { lines.shift(); }
 
         document.getElementById('story-content').innerHTML = marked.parse(lines.join('\n'));
+
+        // Open all external links in new tab
+        document.querySelectorAll('#story-content a[href^="http"]').forEach(a => {
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+        });
       })
       .catch(() => {
         document.getElementById('story-content').innerHTML =

@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "feat(journal2): add May 1 chemical use newsletter as weekly roundup entry"
+git commit -m "docs(nav): rename \"work & publication\" to \"current work\""
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"

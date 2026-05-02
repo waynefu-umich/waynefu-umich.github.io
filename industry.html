@@ -195,14 +195,13 @@
       .then(md => {
         // Remove first H1 line and the line immediately after (subtitle), plus the first ---
         const lines = md.split('\n');
-        let skip = 0;
-        // Skip H1
-        if (lines[0].startsWith('# ')) { lines.shift(); skip++; }
-        // Skip empty line after H1
-        if (lines[0].trim() === '') { lines.shift(); }
-        // Skip subtitle paragraph (next non-empty line)
+        // Skip title line
         if (lines[0].trim() !== '' && !lines[0].startsWith('#')) { lines.shift(); }
-        // Skip blank + first ---
+        // Skip empty line
+        if (lines[0].trim() === '') { lines.shift(); }
+        // Skip subtitle line
+        if (lines[0].trim() !== '' && !lines[0].startsWith('#')) { lines.shift(); }
+        // Skip empty line + first ---
         if (lines[0].trim() === '') { lines.shift(); }
         if (lines[0].trim() === '---') { lines.shift(); }
 

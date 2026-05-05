@@ -14,7 +14,7 @@ This page is an attempt to connect my career dots, not a résumé entry, and to 
 
 ## i2 Technologies
 
-[![i2 Technologies](i2_logo.png)](https://blueyonder.com)
+[![i2 Technologies](i2_logo.svg)](https://blueyonder.com)
 
 Now Blue Yonder · Dallas, TX & Tokyo, Japan
 Consultant & Solution Manager
@@ -57,7 +57,7 @@ Supply chain theory says: minimize costs subject to service-level constraints, g
 
 ## Servigistics
 
-[![Servigistics](Servigsitics_logo.jpg)](https://www.ptc.com/en/products/service-lifecycle-management/servigistics)
+[![Servigistics](servigistics_logo.svg)](https://www.ptc.com/en/products/service-lifecycle-management/servigistics)
 
 Acquired by PTC · Atlanta, GA
 Director of Product Management

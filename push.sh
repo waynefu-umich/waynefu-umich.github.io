@@ -15,7 +15,7 @@ echo "--- staging all changes ---"
 git add -A
 
 echo "--- committing ---"
-git commit -m "style(industry): restore SVG logos for i2 and Servigistics"
+git commit -m "fix(index,industry): remove About Me label, use jpg logos for i2 and Servigistics"
 
 echo "--- pushing to origin/main ---"
 echo "(A browser window may open for GitHub authentication — click Authorize.)"
